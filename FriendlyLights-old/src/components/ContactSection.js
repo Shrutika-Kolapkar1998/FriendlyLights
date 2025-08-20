@@ -39,7 +39,7 @@ const ContactSection = () => {
             <input type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Your Name' className='w-full p-2 border rounded' required />
             <input type='email' name='email' value={formData.email} onChange={handleChange} placeholder='Your Email' className='w-full p-2 border rounded' required />
             <textarea name='message' value={formData.message} onChange={handleChange} placeholder='Your Message' className='w-full p-2 border rounded h-32' required></textarea>
-            <button className='px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700' type='submit'>Send</button>
+            <button className='w-40 px-6 py-2 bg-stone-600 text-white rounded-full shadow hover:bg-stone-900 cursor-pointer no-underline' type='submit'>Send</button>
         </form>
         {status && <p className='mt-4 text-gray-700'>{status}</p>}
     </section>
